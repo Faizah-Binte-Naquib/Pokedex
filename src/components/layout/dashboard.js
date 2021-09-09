@@ -1,12 +1,12 @@
-import React, { Component } from 'react';
 import PokemonList from '../pokemon/pokelist';
+import React from 'react'
 
-export default class dashboard extends Component {
-    render() {
-        return (
-            <div>
-                <PokemonList/>
-            </div>
-        )
-    }
+export default function dashboard() {
+    return (
+        <div>
+            <PokemonList/>
+        </div>
+    )
 }
+
+

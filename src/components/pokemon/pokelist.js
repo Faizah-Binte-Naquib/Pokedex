@@ -1,27 +1,33 @@
-import React, { Component } from 'react'
+import React,{useState, useEffect} from 'react'
 import axios from 'axios';
 import PokemonCard from './pokecard';
 
-export default class pokelist extends Component {
 
-    state={
-        url: 'https://pokeapi.co/api/v2/pokemon/',
-        pokemon: null,
-        allpokemon:null
-    };
-    async componentDidMount() {
-        const res = await axios.get(this.state.url);
-        this.setState({pokemon: res.data['results']});
-        this.setState({allpokemon: res.data['results']});
+
+export default function Pokelist() {
+
+    const [url,setUrl] = useState("https://pokeapi.co/api/v2/pokemon/");
+    const [pokemon,setPokemon]= useState(null);
+    const [allPokemon,setAllPokemon] =useState(null);
+
+    useEffect(() => {
+        componentDidMount();
+      },[]);
+
+
+    const componentDidMount= async()=>{
+        const res = await axios.get(url);
+        setPokemon(res.data['results']);
+        setAllPokemon(res.data['results']);
         return res;
     };
 
-    handleFilter = (event) =>{
+    const handleFilter = (event) =>{
         const searchTerm = event.target.value;
         console.log(searchTerm);
         // eslint-disable-next-line array-callback-return
         const newFilter = 
-            this.state.allpokemon.map(pokemon=>{
+            allPokemon.map(pokemon=>{
                 if(pokemon.name.includes(searchTerm)){
                     return pokemon;
                 }
@@ -30,22 +36,23 @@ export default class pokelist extends Component {
          const  Filtered = newFilter.filter(function( element ) {
                 return element !== undefined;
              });
-                this.setState({pokemon:Filtered});
+            setPokemon(Filtered);
     };
 
-render(){
-        return (
+
+    return (
+        <div>
             <React.Fragment>
             <div class="input-group">
             <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
-            aria-describedby="search-addon" onChange={this.handleFilter}/>
+            aria-describedby="search-addon" onChange={handleFilter}/>
             <button type="button" class="btn btn-outline-primary">search</button>
             </div>
             <br></br>
                 { 
-            this.state.pokemon ?(
+            pokemon ?(
             <div className="row">
-                {this.state.pokemon.map(pokemon =>(
+                {pokemon.map(pokemon =>(
                     <PokemonCard name={pokemon.name}
                     url={pokemon.url}
                     key={pokemon.name} />
@@ -57,7 +64,6 @@ render(){
                 }
              
             </React.Fragment>
-        );
-    }
+        </div>
+    )
 }
-
