@@ -1,14 +1,15 @@
-.container{
-    padding-top: 4rem;
-    min-height: 1000px;
+.container {
+  padding-top: 4rem;
+  min-height: 1000px;
 }
-.App{
-    height: 100%;
-    width: 100%;
-    background-color: white;
-    font-family: Helvetica, sans-serif;
+.App {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  font-family: Helvetica, sans-serif;
 }
 
-html, body {
-    height: 100%;
-  }
+html,
+body {
+  height: 100%;
+}

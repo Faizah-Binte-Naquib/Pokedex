@@ -1,209 +1,215 @@
-.left-panel{
-    height:500px;
-    width:300px;
-    background-color:#F10266;
-    border-radius: 15px;
-    border:1px solid ;
-    box-shadow: 1px 2px;
+.left-panel {
+  height: 500px;
+  width: 300px;
+  background-color: #f10266;
+  border-radius: 15px;
+  border: 1px solid;
+  box-shadow: 1px 2px;
 }
-.container{
-    margin-left: 300px;
-    height: 100%;
+.container {
+  margin-left: 300px;
+  height: 100%;
 }
 
 .dot {
-    height: 20px;
-    width: 20px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    border: 3px solid white;
-    margin: 2px;
-    box-shadow: 0.5px 2px;
-  }
+  height: 20px;
+  width: 20px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  border: 3px solid white;
+  margin: 2px;
+  box-shadow: 0.5px 2px;
+}
 
-#power-button{
-    border: 5px solid white;
-    height: 60px;
-    width: 60px;
-    margin: 6px;
-    animation: power-button-color 1s infinite;
+#power-button {
+  border: 5px solid white;
+  height: 60px;
+  width: 60px;
+  margin: 6px;
+  animation: power-button-color 1s infinite;
 }
 
 @keyframes power-button-color {
-    from {background-color: #3798CB;}
-    to {background-color:#92bdd4;}
+  from {
+    background-color: #3798cb;
   }
-
-#red{
-    background-color: red; 
-}
-#green{
-    background-color:greenyellow; 
-}
-#yellow{
-    background-color: yellow;
+  to {
+    background-color: #92bdd4;
+  }
 }
 
-.screen{
-    width: 220px;
-    height: 210px;
-    background-color: white;
-    margin-left:40px;
-    margin-top: 10px;
-    box-shadow: 1px 1px 1px 2px;
-    border-radius: 0px 0px 0px 10px;
-    display:flex;
-    justify-content: center;
-    
+#red {
+  background-color: red;
+}
+#green {
+  background-color: greenyellow;
+}
+#yellow {
+  background-color: yellow;
 }
 
-#screen-button-small{
-    box-shadow: 1px 1px;
-    margin-left: 42px;
-    background-color: red;
+.screen {
+  width: 220px;
+  height: 210px;
+  background-color: white;
+  margin-left: 40px;
+  margin-top: 10px;
+  box-shadow: 1px 1px 1px 2px;
+  border-radius: 0px 0px 0px 10px;
+  display: flex;
+  justify-content: center;
 }
 
-.screen-inner{
-    background-color:#98CB98;
-    width: 170px;
-    height:140px;
-    margin-top: 5px;
-    border: 2px solid black;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
+#screen-button-small {
+  box-shadow: 1px 1px;
+  margin-left: 42px;
+  background-color: red;
 }
 
-#screen-button-large{
-    width: 25px;
-    height: 25px;
-    margin-left: -20px;
-    background-color:red;
+.screen-inner {
+  background-color: #98cb98;
+  width: 170px;
+  height: 140px;
+  margin-top: 5px;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-
-
-.sound{
-    float: right;
-}
-.line{
-    height: 2px;
-    width: 30px;
-    background-color: black;
-    margin: 7px;
+#screen-button-large {
+  width: 25px;
+  height: 25px;
+  margin-left: -20px;
+  background-color: red;
 }
 
-#lower-gray-button{
-    background-color:gray;
-    border: 0px solid;
-    height: 40px;
-    width: 40px;
+.sound {
+  float: right;
+}
+.line {
+  height: 2px;
+  width: 30px;
+  background-color: black;
+  margin: 7px;
 }
 
-.last-buttons{
-    margin:15px;
+#lower-gray-button {
+  background-color: gray;
+  border: 0px solid;
+  height: 40px;
+  width: 40px;
 }
 
-#lower-red{
-width: 70px;
-height: 10px;
-background-color:white;
-border-radius: 0px 0px 0px 10px;
-border: 0px solid;
-margin-top: 7px;
+.last-buttons {
+  margin: 15px;
 }
 
-#lower-yellow{
-    width: 70px;
-    height: 10px;
-    background-color:#3798CB;
-    border-radius: 0px 10px 0px 0px;
-    border: 0px solid;
-    margin-top: 7px;
-    }
-
-#screen-inner-2{
-    width: 90px;
-    height: 40px;
-    margin: 0 auto;
-    margin-left: 62px;
-    margin-top: -10px;
+#lower-red {
+  width: 70px;
+  height: 10px;
+  background-color: white;
+  border-radius: 0px 0px 0px 10px;
+  border: 0px solid;
+  margin-top: 7px;
 }
 
-
-.plus{
-    margin-left:50px;
-    margin-top: -30px;
-}
-#plus-1{
-    background-color:#585858;
-    height: 80px;
-    width: 30px;
-    border-radius:10px;
-    border: 1px solid;
+#lower-yellow {
+  width: 70px;
+  height: 10px;
+  background-color: #3798cb;
+  border-radius: 0px 10px 0px 0px;
+  border: 0px solid;
+  margin-top: 7px;
 }
 
-#plus-2{
-    background-color:#585858;
-    height: 30px;
-    width: 80px;
-    border-radius:10px;
-    border: 1px solid;
-    margin-top: -55px;;
-    margin-left: -25px;
+#screen-inner-2 {
+  width: 90px;
+  height: 40px;
+  margin: 0 auto;
+  margin-left: 62px;
+  margin-top: -10px;
 }
 
-.section{
-    border: none;
-    height: 5px;
+.plus {
+  margin-left: 50px;
+  margin-top: -30px;
 }
-.right-panel{
-    width: 290px;
-    height: 370px;
-    background-color:#F10266;
-    float: right;
-    margin-top: 95px;
-    border-radius: 0px 15px 15px 0px;
-    border:1px solid ;
-    box-shadow: 1px 2px;
+#plus-1 {
+  background-color: #585858;
+  height: 80px;
+  width: 30px;
+  border-radius: 10px;
+  border: 1px solid;
 }
 
-.poke-details-screen{
-    width: 235px;
-    height: 170px;
-    margin: 0 auto;
-    background-color:gray;
-    border: 2px solid black;
-    display: flex;
-    overflow-x: auto;
-    color: white;
-    padding:5px;
+#plus-2 {
+  background-color: #585858;
+  height: 30px;
+  width: 80px;
+  border-radius: 10px;
+  border: 1px solid;
+  margin-top: -55px;
+  margin-left: -25px;
 }
 
-.button{
-    width: 100%;
-    height: 40px;
-    background-color:#7CA9F7;
-    border: 2px solid black;
-    border-radius:5px;
+.section {
+  border: none;
+  height: 5px;
 }
-.button-group{
-    padding-left:30px;
-    padding-right:30px;
-}
-
-.padding-0{
-    padding-left: 0;
-    padding-right: 0;
+.right-panel {
+  width: 290px;
+  height: 370px;
+  background-color: #f10266;
+  float: right;
+  margin-top: 95px;
+  border-radius: 0px 15px 15px 0px;
+  border: 1px solid;
+  box-shadow: 1px 2px;
 }
 
-#right-panel-dot{
-    width: 50px;
-    height: 50px;
-    background-color:yellow;
-    margin-top: 20px;
-    margin-left: 30px;
+.poke-details-screen {
+  width: 260px;
+  height: 190px;
+  margin: 0 auto;
+  background-color: gray;
+  border: 2px solid black;
+  display: flex;
+  color: white;
+  padding-right: 35px;
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow: auto;
+}
+
+.poke-details-screen::-webkit-scrollbar {
+  display: none;
+}
+
+.button {
+  width: 100%;
+  height: 40px;
+  background-color: #7ca9f7;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+.button-group {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.padding-0 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#right-panel-dot {
+  width: 50px;
+  height: 50px;
+  background-color: yellow;
+  margin-top: 20px;
+  margin-left: 30px;
 }
