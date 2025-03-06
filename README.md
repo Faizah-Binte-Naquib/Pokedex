@@ -1,3 +1,22 @@
+# Pokedex
+
+## Project Overview
+**Pokedex** is a web application built using **React** that allows users to explore Pokémon data in a fun and interactive way. With a cute UI, this project mimics a Pokedex interface, displaying detailed information about Pokémon. The data is fetched from the **PokeAPI** and includes details like species, abilities, and other Pokémon attributes. The application uses **JavaScript**, **CSS**, and **HTML** for a responsive, attractive user interface.
+
+## Features
+
+### 1. Interactive Pokedex
+- Browse through a list of Pokémon with a visually appealing UI that mimics the classic Pokedex design.
+- The interface is user-friendly and cute, designed to make exploring Pokémon fun.
+
+### 2. Pokémon Details
+- For each Pokémon, you can view:
+  - **Name**
+  - **Pokédex number**
+  - **Abilities**
+  - **Types**
+  - **Species**
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
